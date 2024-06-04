@@ -4,18 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="" />
+    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BreakDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ContinueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DoWhileDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ForEachDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ForIndexDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IfElseDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OperatorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RandomDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ScanneDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SwitchCaseDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TernaryDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WhileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hHJ4XKojPPeO8ZYN8cfcTks01V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,14 +48,73 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BreakDemo.executor": "Run",
+    "Application.ContinueDemo.executor": "Run",
+    "Application.DoWhileDemo.executor": "Run",
+    "Application.ForEachDemo.executor": "Run",
+    "Application.IfElseDemo.executor": "Run",
+    "Application.OperatorDemo.executor": "Run",
+    "Application.OutputDemo.executor": "Run",
+    "Application.RandomDemo.executor": "Run",
+    "Application.ScanneDemo.executor": "Run",
+    "Application.SwitchCaseDemo.executor": "Run",
+    "Application.TernaryDemo.executor": "Run",
+    "Application.WhileDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "lesson-02",
     "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.OutputDemo">
+    <configuration name="BreakDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BreakDemo" />
+      <module name="java_core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ContinueDemo" />
+      <module name="java_core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OutputDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OutputDemo" />
+      <module name="java_core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RandomDemo" />
+      <module name="java_core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScanneDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ScanneDemo" />
+      <module name="java_core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OutputDemo" />
+        <item itemvalue="Application.ScanneDemo" />
+        <item itemvalue="Application.RandomDemo" />
+        <item itemvalue="Application.ContinueDemo" />
+        <item itemvalue="Application.BreakDemo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -48,7 +131,11 @@
       <option name="presentableId" value="Default" />
       <updated>1717244879028</updated>
       <workItem from="1717244880462" duration="8000" />
+      <workItem from="1717502825834" duration="9809000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
