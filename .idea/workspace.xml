@@ -4,18 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="" />
+    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExamQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GroupAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PositionName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Positon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TypeName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TypeQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lesson_01" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hHJ4XKojPPeO8ZYN8cfcTks01V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,10 +52,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Program.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "assignment__01",
     "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
