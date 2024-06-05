@@ -1,5 +1,4 @@
-public class Positon {
+public class Position {
     int id;
     PositionName name;
-
 }

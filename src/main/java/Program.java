@@ -10,7 +10,7 @@ public class Program {
         System.out.println("id :" + department.id);
         System.out.println("name :" + department.name);
         // position
-        Positon position = new Positon();
+        Position position = new Position();
         position.id = 1;
         position.name = PositionName.DEV;
         System.out.println("thong tin chuc vu");
@@ -23,7 +23,7 @@ public class Program {
         account.username = "account1";
         account.fullName = "Vo Quang Thong";
         account.department = department;
-        account.positon = position;
+        account.position = position;
         account.CreateDate = LocalDate.of(2024,04,12);
         System.out.println("thong tin account");
         System.out.println("id : " + account.id);

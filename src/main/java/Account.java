@@ -6,7 +6,7 @@ public class Account {
     String username;
     String fullName;
     Department department;
-    Positon positon;
+    Position position;
     LocalDate CreateDate;
 
 }
