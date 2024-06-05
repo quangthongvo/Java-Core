@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExamQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GroupAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PositionName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Positon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TypeName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TypeQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_01" />
+        <entry key="$PROJECT_DIR$" value="assignment_01" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,16 +39,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Exercise1.executor": "Run",
+    "Application.If.executor": "Run",
     "Application.Program.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "assignment__01",
+    "git-widget-placeholder": "assignment-02",
     "kotlin-language-version-configured": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.Exercise1">
+    <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise1" />
+      <module name="java_core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="If" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="If" />
+      <module name="java_core" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Exercise1" />
+        <item itemvalue="Application.If" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
