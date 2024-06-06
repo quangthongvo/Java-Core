@@ -1,14 +1,15 @@
+import static java.lang.System.*;
 
 public class Exercise1 {
     public static void main(String[] args) {
         // IF
         // question 1
         Account account = new Account();
-        if (account.department == null) {
-        System.out.println("nhan vien nay chua co phong ban");
-       } else {
-        System.out.println("nhan vien nay da co phong ban la : " + account.department.name);
-       }
+        if( account.department == null) {
+        System.out.println("nhan vien nay chua co phong ban" );
+        } else {
+            System.out.println("Phòng ban của nhân viên này là" + account.department.name);
+        }
         // question 2
         Group group1 = new Group();
         Group group2 = new Group();
@@ -30,7 +31,7 @@ public class Exercise1 {
         Position position = new Position();
         account.position = position;
         if (account.position == position ) {
-            System.out.println("Đây là Developer");
+            System.out.println("Đây là Developer : " + PositionName.DEV);
         }else {
             System.out.println("Người này không phải là Developer");
         }
@@ -39,9 +40,34 @@ public class Exercise1 {
         Account account1 = new Account();
         Account account2 = new Account();
         Account account3 = new Account();
-        Account account[] = {account1,account2,account3};
-        switch ()
 
-
+        switch (account.id = 1) {
+            case 1:
+                System.out.println("Nhóm có một thành viên");
+                break;
+            case 2:
+                System.out.println("Nhóm có hai thành viên");
+                break;
+            case 3:
+                System.out.println("Nhóm có ba thành viên");
+                break;
+            default:
+                System.out.println("Nhóm có nhiều thành viên");
+        }
+       // question 6
+        Department department = new Department();
+        department.name = "giam doc";
+        account.department = department;
+        switch (department.name) {
+            case "giam doc":
+                System.out.println("nhan vien nay chua co phong ban");
+                break;
+            default:
+                System.out.println("Phòng ban của nhân viên này là");
+                break;
+        }
+       // question 7
+        // For each
+        String[] account = {}
     }
 }
