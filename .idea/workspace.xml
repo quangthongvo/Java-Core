@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="" />
+    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MethodDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,32 +34,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BreakDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ContinueDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DoWhileDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ForEachDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.IfElseDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OperatorDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OutputDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RandomDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ScanneDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SwitchCaseDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TernaryDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.WhileDemo.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lesson-02&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BreakDemo.executor": "Run",
+    "Application.ContinueDemo.executor": "Run",
+    "Application.DoWhileDemo.executor": "Run",
+    "Application.ForEachDemo.executor": "Run",
+    "Application.IfElseDemo.executor": "Run",
+    "Application.MethodDemo.executor": "Run",
+    "Application.OperatorDemo.executor": "Run",
+    "Application.OutputDemo.executor": "Run",
+    "Application.RandomDemo.executor": "Run",
+    "Application.ScanneDemo.executor": "Run",
+    "Application.SwitchCaseDemo.executor": "Run",
+    "Application.TernaryDemo.executor": "Run",
+    "Application.WhileDemo.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lesson-02",
+    "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.TernaryDemo">
-    <configuration name="ContinueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ContinueDemo" />
+}]]></component>
+  <component name="RunManager" selected="Application.MethodDemo">
+    <configuration name="MethodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MethodDemo" />
       <module name="java_core" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MethodDemo" />
         <item itemvalue="Application.TernaryDemo" />
         <item itemvalue="Application.OutputDemo" />
         <item itemvalue="Application.ScanneDemo" />
         <item itemvalue="Application.RandomDemo" />
-        <item itemvalue="Application.ContinueDemo" />
       </list>
     </recent_temporary>
   </component>
