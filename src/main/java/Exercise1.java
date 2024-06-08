@@ -2,9 +2,12 @@ import static java.lang.System.*;
 
 public class Exercise1 {
     public static void main(String[] args) {
+
+
         // IF
         // question 1
-        Account account = new Account();
+        Program program = new Program();
+        Account account = program.createAccount1();
         if( account.department == null) {
         System.out.println("nhan vien nay chua co phong ban" );
         } else {
@@ -37,9 +40,9 @@ public class Exercise1 {
         }
         // Switch case
         // question 5
-        Account account1 = new Account();
-        Account account2 = new Account();
-        Account account3 = new Account();
+        Account account1 = program.createAccount1();
+        Account account2 = program.createAccount1();
+        Account account3 = program.createAccount1();
 
         switch (account.id = 1) {
             case 1:
@@ -67,7 +70,24 @@ public class Exercise1 {
                 break;
         }
        // question 7
+
         // For each
-        String[] account = {}
+        // question 8
+        Account[] accounts = {account1};
+        for (Account acc : accounts) {
+            System.out.println("email : " + acc.email );
+            System.out.println("fullName : " + acc.fullName);
+            System.out.println("name : " + acc.department);
+        }
+        // question 9
+        Account[] accounts1 ={account1};
+        for (Account acc : accounts1) {
+            System.out.println("id : " + acc.id);
+            System.out.println("username : " + acc.username);
+        }
+
+        //For
+        // question 10
+
     }
 }
