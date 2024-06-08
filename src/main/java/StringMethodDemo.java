@@ -18,8 +18,8 @@ public class StringMethodDemo {
         System.out.println("s.toUpperCase() = " + s.toUpperCase());
         System.out.println("s.toLowerCase() = " + s.toLowerCase());
         String[] word = s.split(" ");
-        for (String word : words ){
-            System.out.println("word = " + ) ;
+        for (String words : word ){
+            System.out.println("word = " + word ) ;
         }
     }
 }
