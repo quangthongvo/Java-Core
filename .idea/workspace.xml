@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AccessModifierDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConstructoDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Encapsulation/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Encapsulation/EncapsulationDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Duck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/InheritanceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/abstraction/AbstractionDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +38,7 @@
     "Application.InheritanceDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson-04",
+    "git-widget-placeholder": "lesson-05",
     "kotlin-language-version-configured": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
