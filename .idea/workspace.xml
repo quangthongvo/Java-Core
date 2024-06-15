@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exercise01/ITuyenSinh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exercise01/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exercise01/ThiSinhKhoiA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exercise01/ThiSinhKhoiB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exercise01/ThiSinhKhoiC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exercise01/TuyenSinh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exercise01/ThiSinh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise01/ThiSinh.java" afterDir="false" />
-    </list>
+    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717244879028</updated>
       <workItem from="1717244880462" duration="8000" />
-      <workItem from="1718382515439" duration="6690000" />
+      <workItem from="1718382515439" duration="7134000" />
     </task>
     <servers />
   </component>
