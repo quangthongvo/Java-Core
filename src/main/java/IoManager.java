@@ -23,7 +23,7 @@ public class IoManager {
     }
     public static void writeObject(String path , Object object, boolean append){
         try (
-                FileInputStream fos = new FilterOutputStream(path, append);
+                FileOutputStream fos = new FileOutputStream(path, append);
                 ObjectOutputStream oos = new ObjectOutputStream(fos);
                 ){
             oos.writeObject(object);
@@ -33,11 +33,13 @@ public class IoManager {
     }
     public static Object readObject(String path){
         try (
-                FileInputStream fis = new FileInputStream();
-                ObjectOutputStream ois = new ObjectInputStream();
+                FileInputStream fis = new FileInputStream(path);
+                ObjectInputStream ois = new ObjectInputStream(fis)
         ){
             return ois.readObject();
-        }catch (IOException exception){
+        }catch (IOException | ClassNotFoundException exception){
+            System.out.println(exception .getMessage());
+            return null;
 
         }
     }

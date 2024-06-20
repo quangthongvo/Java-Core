@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AnimalDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FinalDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IoManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IoStreamDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Math.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Shiba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StaticDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IoStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IoStreamDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

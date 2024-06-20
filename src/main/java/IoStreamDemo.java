@@ -13,6 +13,9 @@ public class IoStreamDemo {
         System.out.println(content);
 
         Account account = new Account(1, "thongvq", "12345");
-        IoManager.writeObject();
+        IoManager.writeObject(path, account, false);
+        Account saveAccount = (Account) IoManager.readObject(path);
+        System.out.println(saveAccount);
+
     }
 }
