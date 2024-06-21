@@ -4,18 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="" />
+    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/collection/ListDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collection/MapDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collection/QueueDeom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collection/SetDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collection/StackDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/comparing/ComparableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/comparing/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/GenericDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/Math.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generic/WildcardDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hHJ4XKojPPeO8ZYN8cfcTks01V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,14 +48,97 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ComparableDemo.executor": "Run",
+    "Application.GenericDemo.executor": "Run",
+    "Application.MapDemo.executor": "Run",
+    "Application.QueueDeom.executor": "Run",
+    "Application.StackDemo.executor": "Run",
+    "Application.WildcardDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "lesson-08",
     "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.WildcardDemo">
+    <configuration name="ComparableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="comparing.ComparableDemo" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="comparing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.GenericDemo" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.MapDemo" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueDeom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.QueueDeom" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WildcardDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.WildcardDemo" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WildcardDemo" />
+        <item itemvalue="Application.ComparableDemo" />
+        <item itemvalue="Application.GenericDemo" />
+        <item itemvalue="Application.MapDemo" />
+        <item itemvalue="Application.QueueDeom" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
