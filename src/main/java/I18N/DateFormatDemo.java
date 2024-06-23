@@ -1,0 +1,37 @@
+package I18N;
+
+import java.text.DateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.Locale;
+
+public class DateFormatDemo {
+    public static void main(String[] args) {
+        LocalDate today = LocalDate.now();
+        Locale vi = new Locale("vi");
+        Locale ja = new Locale("ja");
+        Locale en = new Locale("en");
+
+        String s1 = fromatDateByLocaledate(today, vi);
+        System.out.println("s1 = " + s1);
+        String s2 = fromatDateByLocaledate(today, ja);
+        System.out.println("s2 = " + s2);
+        String s4 = formatDateByPattern( today,"yyyy-mm-dd");
+        System.out.println("s4 = " + s4);
+        String s3 = fromatDateByLocaledate(today, en);
+        System.out.println("s3 = " + s3);
+
+    }
+    public static String fromatDateByLocaledate(LocalDate date, Locale locale) {
+        DateTimeFormatter formatter = DateTimeFormatter
+                .ofLocalizedDate(FormatStyle.FULL)
+                .withLocale(locale);
+        return formatter.format(date);
+    }
+    public static String formatDateByPattern(LocalDate date, String pattern){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+        return formatter.format(date);
+
+    }
+}

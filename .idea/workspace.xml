@@ -4,18 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="" />
+    <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Annotcation/AnnotcationDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Annotcation/Math.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GC/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GC/GCDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/I18N/DateFormatDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/I18N/NumberFormatDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/innerClass/InnerClassDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/innerClass/Outer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/innerClass/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hHJ4XKojPPeO8ZYN8cfcTks01V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,14 +42,69 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DateFormatDemo.executor": "Run",
+    "Application.GCDemo.executor": "Run",
+    "Application.NumberFormatDemo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "lesson-09",
     "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.GCDemo">
+    <configuration name="DateFormatDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="I18N.DateFormatDemo" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="I18N.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GCDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GC.GCDemo" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberFormatDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="I18N.NumberFormatDemo" />
+      <module name="java_core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="I18N.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GCDemo" />
+        <item itemvalue="Application.NumberFormatDemo" />
+        <item itemvalue="Application.DateFormatDemo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
