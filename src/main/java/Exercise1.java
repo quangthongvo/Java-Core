@@ -40,9 +40,7 @@ public class Exercise1 {
         }
         // Switch case
         // question 5
-        Account account1 = program.createAccount1();
-        Account account2 = program.createAccount1();
-        Account account3 = program.createAccount1();
+
 
         switch (account.id = 1) {
             case 1:
@@ -73,6 +71,7 @@ public class Exercise1 {
 
         // For each
         // question 8
+        Account account1 = program.createAccount1();
         Account[] accounts = {account1};
         for (Account acc : accounts) {
             System.out.println("email : " + acc.email );
@@ -80,14 +79,14 @@ public class Exercise1 {
             System.out.println("name : " + acc.department);
         }
         // question 9
-        Account[] accounts1 ={account1};
+        Account account2 = program.createAccount1();
+        Account[] accounts1 ={account2};
         for (Account acc : accounts1) {
             System.out.println("id : " + acc.id);
             System.out.println("username : " + acc.username);
         }
 
-        //For
-        // question 10
+
 
     }
 }
