@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Annotcation/AnnotcationDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Annotcation/Math.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GC/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GC/GCDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/I18N/DateFormatDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/I18N/NumberFormatDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/innerClass/InnerClassDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/innerClass/Outer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/innerClass/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/I18N/DateFormatDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/I18N/DateFormatDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,24 +37,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DateFormatDemo.executor": "Run",
-    "Application.GCDemo.executor": "Run",
-    "Application.NumberFormatDemo.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson-09",
-    "kotlin-language-version-configured": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DateFormatDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GCDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumberFormatDemo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson-09&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.GCDemo">
+}</component>
+  <component name="RunManager" selected="Application.DateFormatDemo">
     <configuration name="DateFormatDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="I18N.DateFormatDemo" />
       <module name="java_core" />
@@ -99,9 +96,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GCDemo" />
-        <item itemvalue="Application.NumberFormatDemo" />
         <item itemvalue="Application.DateFormatDemo" />
+        <item itemvalue="Application.NumberFormatDemo" />
+        <item itemvalue="Application.GCDemo" />
       </list>
     </recent_temporary>
   </component>

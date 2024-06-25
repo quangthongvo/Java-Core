@@ -17,21 +17,22 @@ public class DateFormatDemo {
         System.out.println("s1 = " + s1);
         String s2 = fromatDateByLocaledate(today, ja);
         System.out.println("s2 = " + s2);
-        String s4 = formatDateByPattern( today,"yyyy-mm-dd");
-        System.out.println("s4 = " + s4);
         String s3 = fromatDateByLocaledate(today, en);
         System.out.println("s3 = " + s3);
+        String s4 = formatDateByPattern( today,"yyyy-MM-dd");
+        System.out.println("s4 = " + s4);
 
     }
-    public static String fromatDateByLocaledate(LocalDate date, Locale locale) {
+    public static String fromatDateByLocaledate(LocalDate date, Locale locale){
         DateTimeFormatter formatter = DateTimeFormatter
                 .ofLocalizedDate(FormatStyle.FULL)
                 .withLocale(locale);
         return formatter.format(date);
+
     }
     public static String formatDateByPattern(LocalDate date, String pattern){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
         return formatter.format(date);
-
     }
+
 }
