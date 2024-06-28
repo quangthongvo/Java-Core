@@ -15,6 +15,7 @@ public class User {
     private String proSkill;
     private int expInYear;
     public void setRole(String role) {
+
         this.role = Role.valueOf(role);
     }
     public enum Role{
