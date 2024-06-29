@@ -9,6 +9,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class UserRepository implements IUserRepository {
+    /**
+     * @param
+     * @return tra ve tat ca user trong database
+     * @throws SQLException neu xay ra loi ve SQL
+     * @throws IOException neu xay ra loi ve cau hinh
+     * */
     @Override
     public List<User> findAll() throws SQLException, IOException {
         String sql = "SELECT * FROM users";
