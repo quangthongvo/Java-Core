@@ -1,7 +1,7 @@
 package com.vti.frontemd;
 
+import com.vti.controller.UserController;
 import com.vti.entity.User;
-import com.vti.repository.UserRepository;
 import com.vti.util.ScannerUtil;
 import lombok.AllArgsConstructor;
 
@@ -11,7 +11,7 @@ import java.util.List;
 
 @AllArgsConstructor
 public class UserFunction {
-    private UserRepository repository;
+    private UserController controller;
 
     public void showMenu() throws SQLException , IOException {
         while (true) {
@@ -84,7 +84,7 @@ public class UserFunction {
     }
 
     public void findAll() throws SQLException ,IOException  {
-        List<User> users = repository.findAll();
+        List<User> users = controller.findAll();
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n","ID", "FULLNAME", "EMAIL");
         System.out.println("+------+-------------------------+-------------------------+");
@@ -104,7 +104,7 @@ public class UserFunction {
     private void findById() throws SQLException,IOException {
         System.out.println("Nhap vao id : ");
         int id = ScannerUtil.inputInt();
-        User user = repository.findById(id);
+        User user = controller.findById(id);
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n","ID", "FULLNAME", "EMAIL");
         System.out.println("+------+-------------------------+-------------------------+");
@@ -123,7 +123,7 @@ public class UserFunction {
         String email = ScannerUtil.inputEmail();
         System.out.println("nhap vao password : ");
         String password = ScannerUtil.inputPassword();
-        User user = repository.findByEmailAndPassword(email, password);
+        User user = controller.findByEmailAndPassword(email, password);
         if(user == null){
             System.out.println("Dang nhap that bai");
         }else {
@@ -141,7 +141,7 @@ public class UserFunction {
     private void deleteById() throws SQLException,IOException {
         System.out.println("Nhap vao id : ");
         int id = ScannerUtil.inputInt();
-        int result = repository.deleteById(id);
+        int result = controller.deleteById(id);
         System.out.printf("Da xoa thanh cong %d user.%n",result);
     }
 
@@ -151,7 +151,7 @@ public class UserFunction {
         String fullName = ScannerUtil.inputFullName();
         System.out.println("Nhap vao email");
         String email = ScannerUtil.inputEmail();
-        int result = repository.create(fullName, email);
+        int result = controller.create(fullName, email);
         System.out.printf("Dat tao thanh cong %d user.%n " ,result);
     }
 
