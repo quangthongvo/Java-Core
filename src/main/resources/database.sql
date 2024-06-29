@@ -1,21 +1,22 @@
-DROP DATABASE IF EXISTS lesson_11;
-CREATE DATABASE lesson_11;
-USE lesson_11;
+DROP DATABASE IF EXISTS lesson_12;
+CREATE DATABASE lesson_12;
+USE lesson_12;
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
-                       id          INT PRIMARY KEY AUTO_INCREMENT,
-                       full_name   VARCHAR(50)                     NOT NULL,
-                       email       VARCHAR(50) UNIQUE KEY          NOT NULL,
-                       password    VARCHAR(50)                     NOT NULL DEFAULT '123456Q',
-                       role        ENUM('EMPLOYEE', 'ADMIN')       NOT NULL DEFAULT 'EMPLOYEE',
-                       pro_skill   VARCHAR(50),
-                       exp_in_year INT
-);
+                       id                INT PRIMARY KEY AUTO_INCREMENT,
+                       full_name         VARCHAR(50)  NOT NULL ,
+                       email             VARCHAR(50)  UNIQUE KEY NOT NULL,
+                       password          VARCHAR(50)  NOT NULL DEFAULT '123456Q',
+                       project_id        INT          NOT NULL,
+                       pro_skill         VARCHAR(50)  ,
+                       exp_in_year       INT
 
-INSERT INTO users (full_name        , email              , password  , role		 , pro_skill, exp_in_year)
-VALUES            ('Nguyễn Văn Khoa', 'khoa.nv@gmail.com', '123456Q' , 'EMPLOYEE', 'Java'   , NULL       ),
-                  ('Nguyễn Ngọc Duy', 'duy.nn@gmail.com' , '123456Q' , 'ADMIN'   , NULL     , 10         );
+);
+INSERT INTO users(full_name         , email                , password , project_id , pro_skill , exp_in_year)
+    VALUE            ('vo quang thong'  , 'thong.vq@gmail.com' , '123456Q', 2          , 'java'    , 5          ),
+				 ('phan quang thanh', 'thanh.pq@gmail.com' , '123456Q', 4          , 'C++'     , NULL       ),
+                 ('vu duc manh'     , 'manh.vd@gmail.com ' , '123456Q', 6          , NULL      , 3          );
 
 DROP PROCEDURE IF EXISTS find_by_email_and_password;
 DELIMITER $$
