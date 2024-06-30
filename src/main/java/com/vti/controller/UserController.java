@@ -2,6 +2,7 @@ package com.vti.controller;
 
 import com.vti.entity.User;
 import com.vti.service.IUserService;
+import com.vti.service.UserService;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -10,8 +11,11 @@ import java.util.List;
 
 public class UserController {
     private IUserService service;
+
+    public UserController(UserService service) {
+    }
     public List<User> findAll(){
-            return Collections.emptyList();
+            return service.findAll();
         }
     public User findById(int id) {
         return service.findById(id);

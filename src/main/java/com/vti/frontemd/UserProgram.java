@@ -9,11 +9,11 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class UserProgram {
-    public static void main(String[] args)throws SQLException , IOException {
+    public static void main(String[] args) {
         UserRepository repository = new UserRepository();
         UserService service = new UserService(repository);
-        UserController controller = new UserController(repository);
-        UserFunction function = new UserFunction(repository);
+        UserController controller = new UserController(service);
+        UserFunction function = new UserFunction(controller);
         function.showMenu();
     }
 }

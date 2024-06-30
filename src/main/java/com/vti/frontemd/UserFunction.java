@@ -13,7 +13,7 @@ import java.util.List;
 public class UserFunction {
     private UserController controller;
 
-    public void showMenu() throws SQLException , IOException {
+    public void showMenu()  {
         while (true) {
             System.out.println("1. Dang nhap ");
             System.out.println("2. Hien thi danh sach user ");
@@ -35,7 +35,7 @@ public class UserFunction {
             }
         }
     }
-    private void showAdminMenu() throws SQLException, IOException {
+    private void showAdminMenu() {
         while (true) {
             System.out.println("1. Hien thi danh sach user ");
             System.out.println("2. Tim kiem user theo chuong trinh ");
@@ -61,7 +61,7 @@ public class UserFunction {
         }
 
     }
-    private void showEmployeeMenu() throws SQLException, IOException {
+    private void showEmployeeMenu() {
         while (true) {
             System.out.println("1. Hien thi danh sach user ");
             System.out.println("2. Tim kiem user theo chuong trinh ");
@@ -83,7 +83,7 @@ public class UserFunction {
 
     }
 
-    public void findAll() throws SQLException ,IOException  {
+    public void findAll()   {
         List<User> users = controller.findAll();
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n","ID", "FULLNAME", "EMAIL");
@@ -100,8 +100,7 @@ public class UserFunction {
             }
         }
     }
-
-    private void findById() throws SQLException,IOException {
+    private void findById()  {
         System.out.println("Nhap vao id : ");
         int id = ScannerUtil.inputInt();
         User user = controller.findById(id);
@@ -118,7 +117,7 @@ public class UserFunction {
             System.out.println("+------+-------------------------+-------------------------+");
         }
     }
-    private void findByEmailAndPassword() throws SQLException,IOException {
+    private void findByEmailAndPassword()  {
         System.out.println("Nhap vao email : ");
         String email = ScannerUtil.inputEmail();
         System.out.println("nhap vao password : ");
@@ -138,14 +137,14 @@ public class UserFunction {
             }
         }
     }
-    private void deleteById() throws SQLException,IOException {
+    private void deleteById()  {
         System.out.println("Nhap vao id : ");
         int id = ScannerUtil.inputInt();
         int result = controller.deleteById(id);
         System.out.printf("Da xoa thanh cong %d user.%n",result);
     }
 
-    private void create() throws SQLException,IOException {
+    private void create()  {
         System.out.println("Moi ban nhap vao thong tin User");
         System.out.println("Nhap vao full name");
         String fullName = ScannerUtil.inputFullName();
