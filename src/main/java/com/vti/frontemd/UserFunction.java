@@ -22,9 +22,9 @@ public class UserFunction {
             System.out.println("Moi ban chon chuc nang : ");
             int menu = ScannerUtil.inputInt();
             if(menu == 1){
-                findByEmailAndPassword();
+                findAdminByEmailAndPassword();
             } else if(menu == 2){
-                findAll();
+                findEmployeeAndManagerByprojectId();
             } else if (menu == 3) {
                 findById();
             } else if (menu == 4) {
@@ -45,7 +45,7 @@ public class UserFunction {
             System.out.println("Moi ban chon chuc nang : ");
             int menu = ScannerUtil.inputInt();
             if(menu == 1){
-                findAll();
+                findEmployeeAndManagerByprojectId();
             } else if (menu == 2) {
                 findById();
             } else if (menu == 3) {
@@ -70,7 +70,7 @@ public class UserFunction {
             System.out.println("Moi ban chon chuc nang : ");
             int menu = ScannerUtil.inputInt();
             if(menu == 1){
-                findAll();
+                findEmployeeAndManagerByprojectId();
             } else if (menu == 2) {
                 findById();
             } else if (menu == 3) {
@@ -83,8 +83,10 @@ public class UserFunction {
 
     }
 
-    public void findAll()   {
-        List<User> users = controller.findAll();
+    public void findEmployeeAndManagerByprojectId()   {
+        System.out.println("Nhap vao project id");
+        int projectId = ScannerUtil.inputInt();
+        List<User> users = controller.findEmployeeAndManagerByprojectId(projectId);
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n","ID", "FULLNAME", "EMAIL");
         System.out.println("+------+-------------------------+-------------------------+");
@@ -117,12 +119,12 @@ public class UserFunction {
             System.out.println("+------+-------------------------+-------------------------+");
         }
     }
-    private void findByEmailAndPassword()  {
+    private void findAdminByEmailAndPassword()  {
         System.out.println("Nhap vao email : ");
         String email = ScannerUtil.inputEmail();
         System.out.println("nhap vao password : ");
         String password = ScannerUtil.inputPassword();
-        User user = controller.findByEmailAndPassword(email, password);
+        User user = controller.findAdminByEmailAndPassword(email, password);
         if(user == null){
             System.out.println("Dang nhap that bai");
         }else {

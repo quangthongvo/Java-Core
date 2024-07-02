@@ -14,14 +14,14 @@ public class UserController {
 
     public UserController(UserService service) {
     }
-    public List<User> findAll(){
-            return service.findAll();
+    public List<User> findEmployeeAndManagerByprojectId(int projectId){
+            return service.findEmployeeAndManagerByProjectId(projectId);
         }
     public User findById(int id) {
         return service.findById(id);
     }
-    public  User findByEmailAndPassword(String email, String password) {
-        return service.findByEmailAndPassword(email, password);
+    public  User findAdminByEmailAndPassword(String email, String password) {
+        return service.findAdminByEmailAndPassword(email, password);
     }
     public int create(String fullName, String email) {
         return service.create(fullName, email);
@@ -29,4 +29,6 @@ public class UserController {
     public int deleteById(int id) {
         return service.deleteById(id);
     }
+
+
 }
