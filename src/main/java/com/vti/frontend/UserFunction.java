@@ -6,6 +6,7 @@ import com.vti.repository.UserRepository;
 import com.vti.util.ScannerUtil;
 import lombok.AllArgsConstructor;
 import java.sql.SQLException;
+import java.util.List;
 
 @AllArgsConstructor
 public class UserFunction {
@@ -17,7 +18,7 @@ public class UserFunction {
             System.out.println("Moi ban chon chuc nang ");
             int menu = ScannerUtil.inputInt();
             if(menu == 1){
-                findByProfileId();
+                findByProjectId();
             } else if (menu == 2) {
                 System.out.println("Cam on ban da su dung chuong trinh");
                 return;
@@ -26,22 +27,21 @@ public class UserFunction {
             }
         }
     }
-    private void findByProfileId() throws SQLException {
-        System.out.println("Nhap vao project_id");
+    private void findByProjectId() throws SQLException {
+        System.out.println("Vui lòng nhập project Id cần tìm");
         int projectId = ScannerUtil.inputInt();
         User user = repository.findByProjectId(projectId);
-        System.out.println("+-------------------------+-------------------------+-------------------------+-------------------------+");
-        System.out.printf("| %-23s | %-23s | %-23s | %-23s |%n", "PROJECT ID", "FULL NAME", "EMAIL","ROLE");
-        System.out.println("+-------------------------+-------------------------+-------------------------+-------------------------+");
-        if(user == null){
-            System.out.printf("| %-23s | %-23s | %-23s | %-23s |%n", "NULL", "NULL", "NULL","NULL");
-            System.out.println("+-------------------------+-------------------------+-------------------------+-------------------------+");
-        }else {
-            System.out.printf(
-                    "| %-23s | %-23s | %-23s | %-23s |%n",
-                    user.getProjectId(), user.getFullName(), user.getEmail(),user.getRole()
-            );
-            System.out.println("+-------------------------+-------------------------+-------------------------+-------------------------+");
+        System.out.println("Danh sách Employee user");
+        System.out.println("+--------+--------------------+--------------------+--------------------+--------------------+");
+        System.out.println("|   ID   |       EMAIL        |      FULL NAME     |         ROLE       |      PRO SKILLS    |");
+        System.out.println("+--------+--------------------+--------------------+--------------------+--------------------+");
+        if (user == null) {
+            System.out.printf("| %-6s | %-18s | %-18s | %-18s | %-18s |%n", "NULL", "NULL", "NULL", "NULL", "NULL");
+            System.out.println("+--------+--------------------+--------------------+--------------------+--------------------+");
+        } else {
+                System.out.printf("| %-6s | %-18s | %-18s | %-18s | %-18s |%n",
+                        user.getId(), user.getFullName(), user.getEmail(), user.getRole(), user.getProSkill());
+                System.out.println("+--------+--------------------+--------------------+--------------------+--------------------+");
+            }
         }
     }
-}

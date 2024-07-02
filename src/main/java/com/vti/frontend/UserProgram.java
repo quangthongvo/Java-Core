@@ -1,7 +1,7 @@
 package com.vti.frontend;
 
 import com.vti.repository.UserRepository;
-
+import com.vti.util.JdbcUtil;
 import java.sql.SQLException;
 
 public class UserProgram {
@@ -9,5 +9,6 @@ public class UserProgram {
             UserRepository repository = new UserRepository();
             UserFunction function = new UserFunction(repository);
             function.showMenu();
+
         }
 }

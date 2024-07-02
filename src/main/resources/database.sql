@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS lesson_12;
-CREATE DATABASE lesson_12;
-USE lesson_12;
+DROP DATABASE IF EXISTS lesson_11;
+CREATE DATABASE lesson_11;
+USE lesson_11;
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
@@ -10,13 +10,14 @@ CREATE TABLE users (
                        password          VARCHAR(50)  NOT NULL DEFAULT '123456Q',
                        project_id        INT          NOT NULL,
                        pro_skill         VARCHAR(50)  ,
+                       role              ENUM('EMPLOYEE','MANAGER') NOT NULL DEFAULT 'EMPLOYEE',
                        exp_in_year       INT
 
 );
-INSERT INTO users(full_name         , email                , password , project_id , pro_skill , exp_in_year)
-    VALUE            ('vo quang thong'  , 'thong.vq@gmail.com' , '123456Q', 2          , 'java'    , 5          ),
-				 ('phan quang thanh', 'thanh.pq@gmail.com' , '123456Q', 4          , 'C++'     , NULL       ),
-                 ('vu duc manh'     , 'manh.vd@gmail.com ' , '123456Q', 6          , NULL      , 3          );
+INSERT INTO users(full_name         , email                , password , project_id , pro_skill,role  , exp_in_year)
+VALUE            ('vo quang thong'  , 'thong.vq@gmail.com' , '123456Q', 1         , 'java'   ,'MANAGER', 5          ),
+				 ('phan quang thanh', 'thanh.pq@gmail.com' , '123456Q', 2         , 'C++'    ,'EMPLOYEE', NULL       ),
+                 ('vu duc manh'     , 'manh.vd@gmail.com ' , '123456Q', 2         , NULL     ,'EMPLOYEE', 3          );
 
 DROP PROCEDURE IF EXISTS find_by_email_and_password;
 DELIMITER $$
@@ -30,3 +31,4 @@ FROM users
 WHERE email = in_email AND password = in_password;
 END $$
 DELIMITER ;
+

@@ -7,20 +7,23 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 public class UserRepository {
     public User findByProjectId(int project_id) throws SQLException {
-        String sql = "SELECT * FROM users WHERE project_id = ?";
+        String sql =  "SELECT * FROM users WHERE project_id = ? AND role = ?";
         try(
                 Connection connection = JdbcUtil.getConnection();
                 PreparedStatement pStmt = connection.prepareStatement(sql);
                 ){
-            pStmt.setInt(1,project_id);
+            pStmt.setInt(1, project_id);
+            pStmt.setString(2, User.Role.EMPLOYEE.toString());
             try(ResultSet rs = pStmt.executeQuery()){
-                return rs.next() ? getUser(rs) : null;
+                return rs.next() ?  getUser(rs) : null;
                 }
             }
         }
+
     private User getUser(ResultSet rs) throws SQLException {
         User user = new User();
         user.setId(rs.getInt("id"));
