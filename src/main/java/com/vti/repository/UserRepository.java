@@ -7,7 +7,8 @@ import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class UserRepository {
+public class UserRepository implements IUserRepository {
+    @Override
     public List<User> findByProjectId(int projectId) throws SQLException {
         String sql = "SELECT * FROM users WHERE role = 'EMPLOYEE' AND project_id = ?";
         try (
@@ -26,6 +27,7 @@ public class UserRepository {
         }
     }
 
+    @Override
     public List<User> findAllManager() throws SQLException {
         String sql = "SELECT * FROM users WHERE role = 'MANAGER' ";
         try(
@@ -40,6 +42,7 @@ public class UserRepository {
             return users;
         }
     }
+    @Override
     public User findManagerByEmailAndPassword(String email, String password)
             throws SQLException {
         String sql = "{CALL find_manager_by_email_and_password(?, ?)}";

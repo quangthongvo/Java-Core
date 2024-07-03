@@ -1,9 +1,8 @@
 package com.vti.frontend;
 
 
+import com.vti.controller.UserController;
 import com.vti.entity.User;
-import com.vti.repository.UserRepository;
-import com.vti.util.JdbcUtil;
 import com.vti.util.ScannerUtil;
 import lombok.AllArgsConstructor;
 import java.sql.SQLException;
@@ -11,9 +10,9 @@ import java.util.List;
 
 @AllArgsConstructor
 public class UserFunction {
-    private UserRepository repository;
+    private UserController controller;
 
-    public void showMenu() throws SQLException {
+    public void showMenu()  {
         while (true) {
             System.out.println("1. Tim kiem User theo profile_id ");
             System.out.println("2. Hien thi danh sach manager ");
@@ -36,10 +35,10 @@ public class UserFunction {
         }
     }
 
-    private void findByProjectId() throws SQLException {
+    private void findByProjectId()  {
         System.out.println("Nhập vào project id:");
         int projectId = ScannerUtil.inputInt();
-        List<User> users = repository.findByProjectId(projectId);
+        List<User> users = controller.findByProjectId(projectId);
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n", "ID", "FULL NAME", "EMAIL");
         System.out.println("+------+-------------------------+-------------------------+");
@@ -57,8 +56,8 @@ public class UserFunction {
         }
     }
 
-    private void findAllManager() throws SQLException {
-        List<User> users = repository.findAllManager();
+    private void findAllManager()  {
+        List<User> users = controller.findAllManager();
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n", "ID", "FULL NAME", "EMAIL");
         System.out.println("+------+-------------------------+-------------------------+");
@@ -75,12 +74,12 @@ public class UserFunction {
             }
         }
     }
-    private void findManagerByEmailAndPassword() throws SQLException {
+    private void findManagerByEmailAndPassword()  {
         System.out.println("Nhập vào email:");
         String email = ScannerUtil.inputEmail();
         System.out.println("Nhập vào password:");
         String password = ScannerUtil.inputPassword();
-        User user = repository.findManagerByEmailAndPassword(email, password);
+        User user = controller.findManagerByEmailAndPassword(email, password);
         if (user == null) {
             System.err.println("Đăng nhập thất bại!");
         } else {
