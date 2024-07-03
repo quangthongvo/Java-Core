@@ -12,19 +12,14 @@ import java.util.List;
 @AllArgsConstructor
 public class UserController {
     private IUserService service;
-    public List<User> findAll(){
-            return service.findAll();
+    public List<User> findEmployeeByProjectId(int projectId) {
+        return service.findEmployeeByProjectId(projectId);
+    }
+    public List<User> findAllManager(){
+            return service.findAllManager();
         }
-    public User findById(int id) {
-        return service.findById(id);
+    public  User findManagerByEmailAndPassword(String email, String password) {
+        return service.findManagerByEmailAndPassword(email, password);
     }
-    public  User findByEmailAndPassword(String email, String password) {
-        return service.findByEmailAndPassword(email, password);
-    }
-    public int create(String fullName, String email) {
-        return service.create(fullName, email);
-    }
-    public int deleteById(int id) {
-        return service.deleteById(id);
-    }
+
 }

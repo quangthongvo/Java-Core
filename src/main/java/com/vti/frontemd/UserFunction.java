@@ -13,78 +13,50 @@ import java.util.List;
 public class UserFunction {
     private UserController controller;
 
-    public void showMenu()  {
+    public void showMenu() {
         while (true) {
-            System.out.println("1. Dang nhap ");
-            System.out.println("2. Hien thi danh sach user ");
-            System.out.println("3. Tim kiem user theo chuong trinh ");
-            System.out.println("4. Thoat chuong trinh ");
-            System.out.println("Moi ban chon chuc nang : ");
+            System.out.println("1. Tìm kiếm employee theo project id");
+            System.out.println("2. Hiển thị danh sách manager");
+            System.out.println("3. Đăng nhập dành cho manager");
+            System.out.println("4. Thoát chương trình");
+            System.out.println("Mời bạn chọn chức năng:");
             int menu = ScannerUtil.inputInt();
-            if(menu == 1){
-                findByEmailAndPassword();
-            } else if(menu == 2){
-                findAll();
-            } else if (menu == 3) {
-                findById();
-            } else if (menu == 4) {
-                System.out.println("Cam on ban da su dung chuong trinh ");
-                return;
-            }else {
-                System.out.println("Vui long nhap lai chuc nang ");
-            }
-        }
-    }
-    private void showAdminMenu() {
-        while (true) {
-            System.out.println("1. Hien thi danh sach user ");
-            System.out.println("2. Tim kiem user theo chuong trinh ");
-            System.out.println("3. Them user");
-            System.out.println("4. Xoa user theo id");
-            System.out.println("5. Dang xuat ");
-            System.out.println("Moi ban chon chuc nang : ");
-            int menu = ScannerUtil.inputInt();
-            if(menu == 1){
-                findAll();
+            if (menu == 1) {
+                findEmployeeByProjectId();
             } else if (menu == 2) {
-                findById();
+                findAllManager();
             } else if (menu == 3) {
-                create();
+                findManagerByEmailAndPassword();
             } else if (menu == 4) {
-                deleteById();
-            } else if (menu == 5) {
-                System.out.println("Cam on ban da su dung chuong trinh ");
+                System.out.println("Cảm ơn bạn đã sử dụng chương trình!");
                 return;
-            }else {
-                System.out.println("Vui long nhap lai chuc nang ");
+            } else {
+                System.err.println("Vui lòng chọn đúng chức năng.");
             }
         }
-
     }
-    private void showEmployeeMenu() {
-        while (true) {
-            System.out.println("1. Hien thi danh sach user ");
-            System.out.println("2. Tim kiem user theo chuong trinh ");
-            System.out.println("3. Dang xuat ");
-            System.out.println("4. Thoat chuong trinh ");
-            System.out.println("Moi ban chon chuc nang : ");
-            int menu = ScannerUtil.inputInt();
-            if(menu == 1){
-                findAll();
-            } else if (menu == 2) {
-                findById();
-            } else if (menu == 3) {
-                System.out.println("Cam on ban da su dung chuong trinh ");
-                return;
-            }else {
-                System.out.println("Vui long nhap lai chuc nang ");
+    private void findEmployeeByProjectId()  {
+        System.out.println("Nhap vao id : ");
+        int projectId = ScannerUtil.inputInt();
+        List<User> users = controller.findEmployeeByProjectId(projectId);
+        System.out.println("+------+-------------------------+-------------------------+");
+        System.out.printf("| %-4s | %-23s | %-23s |%n","ID", "FULLNAME", "EMAIL");
+        System.out.println("+------+-------------------------+-------------------------+");
+        if(users.isEmpty()){
+            System.out.printf("| %-4s | %-23s | %-23s |%n","NULL", "NULL", "NULL");
+            System.out.println("+------+-------------------------+-------------------------+");
+        }else {
+            for (User user : users) {
+                System.out.printf(
+                        "| %-4s | %-23s | %-23s |%n", user.getId(), user.getFullName(), user.getEmail()
+                );
+                System.out.println("+------+-------------------------+-------------------------+");
             }
         }
-
     }
 
-    public void findAll()   {
-        List<User> users = controller.findAll();
+    public void findAllManager()   {
+        List<User> users = controller.findAllManager();
         System.out.println("+------+-------------------------+-------------------------+");
         System.out.printf("| %-4s | %-23s | %-23s |%n","ID", "FULLNAME", "EMAIL");
         System.out.println("+------+-------------------------+-------------------------+");
@@ -100,29 +72,12 @@ public class UserFunction {
             }
         }
     }
-    private void findById()  {
-        System.out.println("Nhap vao id : ");
-        int id = ScannerUtil.inputInt();
-        User user = controller.findById(id);
-        System.out.println("+------+-------------------------+-------------------------+");
-        System.out.printf("| %-4s | %-23s | %-23s |%n","ID", "FULLNAME", "EMAIL");
-        System.out.println("+------+-------------------------+-------------------------+");
-        if(user == null){
-            System.out.printf("| %-4s | %-23s | %-23s |%n","NULL", "NULL", "NULL");
-            System.out.println("+------+-------------------------+-------------------------+");
-        }else {
-            System.out.printf(
-                    "| %-4s | %-23s | %-23s |%n", user.getId(), user.getFullName(), user.getEmail()
-            );
-            System.out.println("+------+-------------------------+-------------------------+");
-        }
-    }
-    private void findByEmailAndPassword()  {
+    private void findManagerByEmailAndPassword()  {
         System.out.println("Nhap vao email : ");
         String email = ScannerUtil.inputEmail();
         System.out.println("nhap vao password : ");
         String password = ScannerUtil.inputPassword();
-        User user = controller.findByEmailAndPassword(email, password);
+        User user = controller.findManagerByEmailAndPassword(email, password);
         if(user == null){
             System.out.println("Dang nhap that bai");
         }else {
@@ -130,28 +85,6 @@ public class UserFunction {
             System.out.printf("Dang nhap thanh cong %s - %s%n",
                     user.getFullName(),role
             );
-            if (role == User.Role.ADMIN){
-                showAdminMenu();
-            } else if (role == User.Role.EMPLOYEE) {
-                showEmployeeMenu();
-            }
         }
     }
-    private void deleteById()  {
-        System.out.println("Nhap vao id : ");
-        int id = ScannerUtil.inputInt();
-        int result = controller.deleteById(id);
-        System.out.printf("Da xoa thanh cong %d user.%n",result);
-    }
-
-    private void create()  {
-        System.out.println("Moi ban nhap vao thong tin User");
-        System.out.println("Nhap vao full name");
-        String fullName = ScannerUtil.inputFullName();
-        System.out.println("Nhap vao email");
-        String email = ScannerUtil.inputEmail();
-        int result = controller.create(fullName, email);
-        System.out.printf("Dat tao thanh cong %d user.%n " ,result);
-    }
-
 }

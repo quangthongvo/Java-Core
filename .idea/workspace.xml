@@ -7,6 +7,15 @@
     <list default="true" id="95e98237-d1b0-4de9-9901-8a1ae5a1fbc6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/frontemd/UserFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/frontemd/UserFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/util/ScannerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/util/ScannerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lesson-10.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lesson-10.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
