@@ -5,7 +5,6 @@ import com.vti.repository.IUserRepository;
 import lombok.AllArgsConstructor;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Collections;
 import java.util.List;
 @AllArgsConstructor
 
@@ -32,7 +31,11 @@ public class UserService implements IUserService {
 
     @Override
     public int create(String fullName, String email) {
-        return 0;
+        try {
+            return repository.create(fullName, email);
+        }catch (SQLException | IOException e){
+            return 0;
+        }
     }
 }
 

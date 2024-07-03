@@ -14,6 +14,7 @@ public class UserRepository implements IUserRepository {
      * @throws SQLException neu xay ra loi ve SQL
      * @throws IOException neu xay ra loi ve cau hinh
      * */
+    @Override
     public List<User> findEmployeeAndManagerByProjectId(int projectId)
             throws SQLException, IOException {
         String sql = "SELECT * FROM users WHERE role IN ('EMPLOYEE', 'MANAGER') AND project_id = ?";
