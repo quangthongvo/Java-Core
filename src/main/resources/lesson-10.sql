@@ -14,9 +14,9 @@ CREATE TABLE users (
                        project_id  INT
 );
 
-INSERT INTO users (full_name        , email              , password  , role		 , pro_skill, exp_in_year, project_id)
-VALUES            ('Nguyễn Văn Khoa', 'khoa.nv@gmail.com', '123456Q' , 'EMPLOYEE', 'Java'   , NULL       , 1         ),
-                  ('Nguyễn Ngọc Duy', 'duy.nn@gmail.com' , '123456Q' , 'MANAGER' , NULL     , 10         , 1         );
+INSERT INTO users (full_name        , email              , password  , role		 , pro_skill,project_id, exp_in_year)
+VALUES            ('Nguyễn Văn Khoa', 'khoa.nv@gmail.com', '123456Q' , 'EMPLOYEE', 'Java'   ,1         , NULL              ),
+                  ('Nguyễn Ngọc Duy', 'duy.nn@gmail.com' , '123456Q' , 'MANAGER' , NULL     , 1        , 10                );
 
 DROP PROCEDURE IF EXISTS find_manager_by_email_and_password;
 DELIMITER $$

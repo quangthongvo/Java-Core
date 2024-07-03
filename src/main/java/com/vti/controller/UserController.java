@@ -2,7 +2,6 @@ package com.vti.controller;
 
 import com.vti.entity.User;
 import com.vti.service.IUserService;
-import com.vti.service.UserService;
 import lombok.AllArgsConstructor;
 
 import java.io.IOException;
