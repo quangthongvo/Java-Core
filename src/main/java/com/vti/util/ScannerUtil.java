@@ -23,15 +23,29 @@ public class ScannerUtil {
         }
     }
 
-    public static String inputFullName() {
-        return inputString();
-    }
 
     public static String inputEmail() {
-        return inputString();
+        while (true) {
+            String input = inputString();
+            if (input.contains("@")) {
+                return input;
+            } else {
+                System.err.println("Yêu cầu email chứa kí tự @");
+                System.err.println("Nhập lại:");
+            }
+        }
     }
 
     public static String inputPassword() {
-        return inputString();
+        while (true) {
+            String input = inputString();
+            int length = input.length();
+            if (length < 6 || length > 12) {
+                System.err.println("Yêu cầu password chứa 6 đến 12 kí tự ");
+                System.err.println("Nhập lại:");
+            } else {
+                return input;
+            }
+        }
     }
 }

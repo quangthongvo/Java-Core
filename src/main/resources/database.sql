@@ -19,16 +19,16 @@ VALUE            ('vo quang thong'  , 'thong.vq@gmail.com' , '123456Q', 1       
 				 ('phan quang thanh', 'thanh.pq@gmail.com' , '123456Q', 2         , 'C++'    ,'EMPLOYEE', NULL       ),
                  ('vu duc manh'     , 'manh.vd@gmail.com ' , '123456Q', 2         , NULL     ,'EMPLOYEE', 3          );
 
-DROP PROCEDURE IF EXISTS find_by_email_and_password;
+DROP PROCEDURE IF EXISTS find_manger_by_email_and_password;
 DELIMITER $$
-CREATE PROCEDURE find_by_email_and_password (
+CREATE PROCEDURE find_manager_by_email_and_password (
     IN in_email     VARCHAR(50),
     IN in_password  VARCHAR(50)
 )
 BEGIN
 SELECT *
 FROM users
-WHERE email = in_email AND password = in_password;
+WHERE role = "MANAGER" AND email = in_email AND password = in_password;
 END $$
 DELIMITER ;
 
