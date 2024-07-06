@@ -1,6 +1,6 @@
 package com.vti.util;
+
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,13 +19,13 @@ public class JdbcUtil {
             return DriverManager.getConnection(url, user, password);
         }
     }
-    public static void checkConnection()  {
-        try (Connection connection = getConnection()){
+
+    public static void checkConnection() {
+        try (Connection connection = getConnection()) {
             System.out.println("ket noi thanh cong : " + connection.getCatalog());
-        }catch (SQLException | IOException exception){
+        } catch (SQLException | IOException exception) {
             System.out.println("ket noi that bai : " + exception.getMessage());
         }
 
     }
-
 }

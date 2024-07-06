@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
+
 public class UserRepository implements IUserRepository {
     /**
      * @param
@@ -39,7 +40,7 @@ public class UserRepository implements IUserRepository {
         try(
                 Connection connection = JdbcUtil.getConnection();
                 CallableStatement cStmt = connection.prepareCall(sql)
-                ){
+        ){
             cStmt.setString(1,email);
             cStmt.setString(2,password);
             try(ResultSet rs = cStmt.executeQuery()){
@@ -47,29 +48,30 @@ public class UserRepository implements IUserRepository {
             }
         }
     }
-@Override
-public int create(String fullName, String email)
-        throws SQLException, IOException {
-    String sql = "INSERT INTO users(full_name, email) VALUES (?, ?)";
-    try (
-            Connection connection = JdbcUtil.getConnection();
-            PreparedStatement pStmt = connection.prepareStatement(sql)
-    ) {
-        pStmt.setString(1, fullName);
-        pStmt.setString(2, email);
-        return pStmt.executeUpdate();
+    @Override
+    public int create(String fullName, String email)
+            throws SQLException, IOException {
+        String sql = "INSERT INTO users(full_name, email) VALUES (?, ?)";
+        try (
+                Connection connection = JdbcUtil.getConnection();
+                PreparedStatement pStmt = connection.prepareStatement(sql)
+        ) {
+            pStmt.setString(1, fullName);
+            pStmt.setString(2, email);
+            return pStmt.executeUpdate();
+        }
+    }
+    private User getUser(ResultSet rs) throws SQLException {
+        User user = new User();
+        user.setId(rs.getInt("id"));
+        user.setFullName(rs.getString("full_name"));
+        user.setEmail(rs.getString("email"));
+        user.setPassword(rs.getString("password"));
+        user.setRole(rs.getString("role"));
+        user.setProSkill(rs.getString("pro_skill"));
+        user.setExpInYear(rs.getInt("exp_in_year"));
+        user.setProjectId(rs.getInt("project_id"));
+        return user;
     }
 }
-private User getUser(ResultSet rs) throws SQLException {
-    User user = new User();
-    user.setId(rs.getInt("id"));
-    user.setFullName(rs.getString("full_name"));
-    user.setEmail(rs.getString("email"));
-    user.setPassword(rs.getString("password"));
-    user.setRole(rs.getString("role"));
-    user.setProSkill(rs.getString("pro_skill"));
-    user.setExpInYear(rs.getInt("exp_in_year"));
-    user.setProjectId(rs.getInt("project_id"));
-    return user;
-}
-}
+
