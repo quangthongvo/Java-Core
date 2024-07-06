@@ -7,7 +7,7 @@ import com.vti.util.JdbcUtil;
 import java.sql.SQLException;
 
 public class UserProgram {
-        public static void main(String[] args) throws SQLException {
+        public static void main(String[] args) {
             UserRepository repository = new UserRepository();
             UserService service  = new UserService(repository);
             UserController controller = new UserController(service);

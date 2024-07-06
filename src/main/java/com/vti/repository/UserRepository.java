@@ -3,13 +3,14 @@ package com.vti.repository;
 import com.vti.entity.User;
 import com.vti.util.JdbcUtil;
 
+import java.io.IOException;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
 public class UserRepository implements IUserRepository {
     @Override
-    public List<User> findByProjectId(int projectId) throws SQLException {
+    public List<User> findByProjectId(int projectId) throws SQLException, IOException {
         String sql = "SELECT * FROM users WHERE role = 'EMPLOYEE' AND project_id = ?";
         try (
                 Connection connection = JdbcUtil.getConnection();
@@ -28,7 +29,7 @@ public class UserRepository implements IUserRepository {
     }
 
     @Override
-    public List<User> findAllManager() throws SQLException {
+    public List<User> findAllManager() throws SQLException, IOException {
         String sql = "SELECT * FROM users WHERE role = 'MANAGER' ";
         try(
                 Connection connection = JdbcUtil.getConnection();
@@ -44,7 +45,7 @@ public class UserRepository implements IUserRepository {
     }
     @Override
     public User findManagerByEmailAndPassword(String email, String password)
-            throws SQLException {
+            throws SQLException, IOException {
         String sql = "{CALL find_manager_by_email_and_password(?, ?)}";
         try (
                 Connection connection = JdbcUtil.getConnection();

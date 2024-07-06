@@ -36,48 +36,48 @@ public class UserFunction {
     }
 
     private void findByProjectId()  {
-        System.out.println("Nhập vào project id:");
+        System.out.println("Nhập vào project id : ");
         int projectId = ScannerUtil.inputInt();
         List<User> users = controller.findByProjectId(projectId);
-        System.out.println("+------+-------------------------+-------------------------+");
-        System.out.printf("| %-4s | %-23s | %-23s |%n", "ID", "FULL NAME", "EMAIL");
-        System.out.println("+------+-------------------------+-------------------------+");
+        System.out.println("+------+-------------------------+-------------------------+-------------------------+");
+        System.out.printf("| %-4s | %-23s | %-23s |%-23s |%n", "ID", "FULL NAME", "EMAIL" , "ROLE");
+        System.out.println("+------+-------------------------+-------------------------+-------------------------+");
         if (users.isEmpty()) {
-            System.out.printf("| %-4s | %-23s | %-23s |%n", "NULL", "NULL", "NULL");
-            System.out.println("+------+-------------------------+-------------------------+");
+            System.out.printf("| %-4s | %-23s | %-23s |%-23s |%n", "NULL", "NULL", "NULL", "NULL");
+            System.out.println("+------+-------------------------+-------------------------+-------------------------+");
         } else {
             for (User user : users) {
                 System.out.printf(
-                        "| %-4s | %-23s | %-23s |%n",
-                        user.getId(), user.getFullName(), user.getEmail()
+                        "| %-4s | %-23s | %-23s |%-23s |%n",
+                        user.getId(), user.getFullName(), user.getEmail(),user.getRole()
                 );
-                System.out.println("+------+-------------------------+-------------------------+");
+                System.out.println("+------+-------------------------+-------------------------+-------------------------+");
             }
         }
     }
 
     private void findAllManager()  {
         List<User> users = controller.findAllManager();
-        System.out.println("+------+-------------------------+-------------------------+");
-        System.out.printf("| %-4s | %-23s | %-23s |%n", "ID", "FULL NAME", "EMAIL");
-        System.out.println("+------+-------------------------+-------------------------+");
+        System.out.println("+------+-------------------------+-------------------------+-------------------------+");
+        System.out.printf("| %-4s | %-23s | %-23s |%-23s |%n", "ID", "FULL NAME", "EMAIL","ROLE");
+        System.out.println("+------+-------------------------+-------------------------+-------------------------+");
         if (users.isEmpty()) {
-            System.out.printf("| %-4s | %-23s | %-23s |%n", "NULL", "NULL", "NULL");
-            System.out.println("+------+-------------------------+-------------------------+");
+            System.out.printf("| %-4s | %-23s | %-23s |%-23s |%n", "NULL", "NULL", "NULL","NULL");
+            System.out.println("+------+-------------------------+-------------------------+-------------------------+");
         } else {
             for (User user : users) {
                 System.out.printf(
-                        "| %-4s | %-23s | %-23s |%n",
-                        user.getId(), user.getFullName(), user.getEmail()
+                        "| %-4s | %-23s | %-23s |%-23s |%n",
+                        user.getId(), user.getFullName(), user.getEmail(),user.getRole()
                 );
-                System.out.println("+------+-------------------------+-------------------------+");
+                System.out.println("+------+-------------------------+-------------------------+-------------------------+");
             }
         }
     }
     private void findManagerByEmailAndPassword()  {
-        System.out.println("Nhập vào email:");
+        System.out.println("Nhập vào email : ");
         String email = ScannerUtil.inputEmail();
-        System.out.println("Nhập vào password:");
+        System.out.println("Nhập vào password : ");
         String password = ScannerUtil.inputPassword();
         User user = controller.findManagerByEmailAndPassword(email, password);
         if (user == null) {
